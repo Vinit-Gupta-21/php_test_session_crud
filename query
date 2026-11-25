@@ -1,0 +1,6 @@
+
+create database library_management;
+use library_management; 
+create table users(id int primary key auto_increment,fullname varchar(100),email varchar(150) unique,phone varchar(15), password_hash varchar(255));
+
+create table books(id int primary key auto_increment,book_title varchar(150),author varchar(100),category varchar(60),price decimal(10,2),quantity int);
